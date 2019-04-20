@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+    <html lang="en-US">
+        <head>
+            <title>Bootstrap Gallery</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="">
+        </head>
+        <body>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+            <h1 class="display-2 bg-dark text-white-50 fixed-top">CHRIS ROSS' BOOTSTRAP GALLERY</h1>
+            <div class="container mt-5">
+                    <ol>
+                            <li><a href="#forms">Forms</a></li>
+                            <li><a href="#tables">Tables</a></li>
+                            <li></li>
+                        </ol>
+            </div>
+            
+            <h1>CONTEXTUAL BACKGROUND-COLORS</h1>
+            <section class="bg-primary">bg-primary</section>
+            <section class="bg-success">bg-success</section>
+            <section class="bg-info">bg-info</section>
+            <section class="bg-warning">bg-warning</section>
+            <section class="bg-danger">bg-danger</section>
+            <section class="bg-muted">bg-muted</section>
+            <hr>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-sm-1 bg-primary">col col-sm-1 bg-primary</div>
+                    <div class="col col-md-2 bg-secondary">col col-md-2 bg-secondary</div>
+                    <div class="col col-lg-3 bg-warning">col col-lg-3 bg-warning</div>
+                    <div class="col col-xl-4 bg-success">col col-xl-4 bg-success</div>
+                </div>
+                <div class="row">
+                        <div class="col col-xl-1 bg-primary">col col-xl-5 bg-primary</div>
+                        <div class="col col-lg-2 bg-secondary">col col-lg-6 bg-secondary</div>
+                        <div class="col col-md-3 bg-warning">col col-md-7 bg-warning</div>
+                        <div class="col col-sm-4 bg-success">col col-sm-8 bg-success</div>
+                    </div>
+            </div>
+            <hr>
+            <h1>CONTEXTUAL BUTTONS</h1>
+            <h3>class=btn</h3>
+            <button class="btn btn-primary">btn-primary</button>
+            <button class="btn btn-secondary">btn-secondary</button>
+            <button class="btn btn-success">btn-success</button>
+            <button class="btn btn-info">btn-info</button>
+            <button class="btn btn-warning">btn-warning</button>
+            <button class="btn btn-danger">btn-danger</button>
+            <button class="btn btn-link">btn-link</button>
+            <button class="btn btn-light">btn-light</button>
+            <button class="btn btn-dark">btn-dark</button>
+            <p>All of the above buttons have an outlined variation like the following:</p>
+            <button class="btn btn-outline-primary">btn-outline-primary</button>
+            <hr>    
+            <h1>BUTTON SIZES</h1>
+            <h3>class=btn</h3>
+            <p>Note: Button color provided by additional class.</p>
+            <button class="btn btn-primary btn-lg">btn-lg</button>
+            <button class="btn btn-primary">Default Size</button>   
+            <button class="btn btn-primary btn-sm">btn-sm</button>            
+            <hr>
+            
+            <a name="forms"></a>
+            <h1>FORMS</h1>
+            <h2>class on each control: form-control</h2>
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Add Name">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Add Email">
+                        <label>Message</label>
+                        <textarea class="form-control" placeholder="Add Message"></textarea>
+                        <label>Gender</label>
+                        <select class="form-control">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>                                             
+                    </div>   
+                </form>            
+            </div>
+            <hr>
+            <h2>This makes all controls inline: form class=form-inline</h2>
+            <form class="form-inline">
+                   
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Add Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Add Email">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control" placeholder="Add Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select class="form-control">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                   
+                </form> 
+
+                <hr>
+                <a name="tables"></a>
+                <h1>Tables</h1>
+               
+                <div class="container">
+                        <h3>class=table</h3>
+                    <table class="table">
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>34</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Class=table table-striped</h3>
+                    <table class="table table-striped">
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr>
+                                <td>Jill</td>
+                                <td>Smith</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Eve</td>
+                                <td>Jackson</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>34</td>
+                            </tr>
+                        </table>
+
+                        <h3>Class=table table-hover</h3>
+                        <h4>Also shown: tr class=table-warning and  tr class=table-danger</h4>
+                    <table class="table table-hover">
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>Jill</td>
+                                <td>Smith</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Eve</td>
+                                <td>Jackson</td>
+                                <td>24</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>34</td>
+                            </tr>
+                        </table>
+
+                        <h3>Class=table table-primary</h3>
+                    <table class="table table-primary">
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr>
+                                <td>Jill</td>
+                                <td>Smith</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Eve</td>
+                                <td>Jackson</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>34</td>
+                            </tr>
+                        </table>
+                
+                </div>
+
+                <h1>Menu Sample/List Groups</h1>
+                <nav class="list-group">                    
+                    <a href="#" class="list-group-item">a class=list-group-item</a>
+                    <a href="#" class="list-group-item">a class=list-group-item</a>
+                    <a href="#" class="list-group-item">a class=list-group-item</a>
+                </nav>
+
+                <container>
+                    
+                </container>
+
+                <h1>DIVs</h1>
+                <h3>div class=card. div contains div for header and body.</h3>
+                <div class="container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>div class=card-header</h5>
+                        </div>
+                        <div class="card-body">    
+                            <p>div class=card-body</p>
+                            <a href="#" class="btn btn-primary">btn btn-primary</a>
+                        </div>
+                        <div class="card-footer bg-primary">    
+                                <p>div class=card-footer bg-primary</p>                    
+                            </div>
+                    </div>        
+                </div>
+                <h1>ALERTS</h1>
+                <div class="alert alert-success" role="alert">alert alert-success</div>
+                <div class="alert alert-info" role="alert">alert alert-info</div>
+                <div class="alert alert-warning" role="alert">alert alert-warning</div>
+                <div class="alert alert-danger" role="alert">alert alert-danger</div>
+                <div class="alert alert-dark" role="alert">alert alert-dark</div>
+                
+                <div class="alert alert-warning alert-dismissible" role="alert">alert alert-warning alert-dismissible
+                    <p>This requires some javascript that has not yet been implemented.</p>
+                    <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+                </div>
+
+        </body>
+    </html>
