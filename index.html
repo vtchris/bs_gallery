@@ -3,17 +3,20 @@
         <head>
             <title>Bootstrap Gallery</title>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <link rel="stylesheet" href="">
+            <link rel="stylesheet" href="assets/styles/styles.css">
         </head>
         <body>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-            <h1 class="display-2 bg-dark text-white-50 fixed-top">CHRIS ROSS' BOOTSTRAP GALLERY</h1>
+            <h1 class="display-3 bg-dark text-white-50 fixed-top">CHRIS ROSS' BOOTSTRAP GALLERY</h1>
             <div class="container mt-5">
                     <ol>
+                            <li><a href="#alerts">Alerts</a></li>
+                            <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#cards">Cards (DIVS)</a></li>
                             <li><a href="#forms">Forms</a></li>
-                            <li><a href="#tables">Tables</a></li>
-                            <li></li>
+                            <li><a href="#gridpositioning">Grid Positioning</a></li>
+                            <li><a href="#tables">Tables</a></li>                            
                         </ol>
             </div>
             
@@ -24,23 +27,35 @@
             <section class="bg-warning">bg-warning</section>
             <section class="bg-danger">bg-danger</section>
             <section class="bg-muted">bg-muted</section>
-            <hr>
+            <section class="bg-dark">bg-dark</section>
 
+            <a name="gridpositioning"></a>
+            <hr>
+            <h1>GRID-POSITIONING</h1>
+            <p>Each grid must be in a class=container. You can have an unlimited number of rows (class=row), but the col widths sould not exceed 12 per row as shown below. Background colors added below to help columns stand out from each other. Row height will adjust to hold content.</p>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col col-sm-1 bg-primary">col col-sm-1 bg-primary</div>
-                    <div class="col col-md-2 bg-secondary">col col-md-2 bg-secondary</div>
-                    <div class="col col-lg-3 bg-warning">col col-lg-3 bg-warning</div>
-                    <div class="col col-xl-4 bg-success">col col-xl-4 bg-success</div>
+                    <div class="col col-md-12 bg-primary">col col-md-12 bg-primary</div>
                 </div>
                 <div class="row">
-                        <div class="col col-xl-1 bg-primary">col col-xl-5 bg-primary</div>
-                        <div class="col col-lg-2 bg-secondary">col col-lg-6 bg-secondary</div>
-                        <div class="col col-md-3 bg-warning">col col-md-7 bg-warning</div>
-                        <div class="col col-sm-4 bg-success">col col-sm-8 bg-success</div>
-                    </div>
+                    <div class="col col-md-6 bg-success">col col-md-6 bg-success</div>
+                    <div class="col col-md-3 bg-warning">col col-md-3 bg-warning</div>
+                    <div class="col col-md-3 bg-info">col col-md-3 bg-info</div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-4 bg-secondary">col col-md-4 bg-secondary</div>
+                    <div class="col col-md-2 bg-danger">col col-md-2 bg-danger</div>
+                    <div class="col col-md-2 bg-muted">col col-md-2 bg-muted</div>
+                    <div class="col col-md-1 bg-primary">col col-md-1 bg-primary</div>
+                    <div class="col col-md-1 bg-success">col col-md-1 bg-success</div>
+                    <div class="col col-md-1 bg-warning">col col-md-1 bg-warning</div>
+                    <div class="col col-md-1 bg-info">col col-md-1 bg-info</div>
+            
+                </div>
             </div>
-            <hr>
+
+            <a name="buttons"></a>
+            <hr>           
             <h1>CONTEXTUAL BUTTONS</h1>
             <h3>class=btn</h3>
             <button class="btn btn-primary">btn-primary</button>
@@ -61,9 +76,9 @@
             <button class="btn btn-primary btn-lg">btn-lg</button>
             <button class="btn btn-primary">Default Size</button>   
             <button class="btn btn-primary btn-sm">btn-sm</button>            
-            <hr>
             
             <a name="forms"></a>
+            <hr>     
             <h1>FORMS</h1>
             <h2>class on each control: form-control</h2>
             <div class="container">
@@ -109,10 +124,9 @@
                    
                 </form> 
 
-                <hr>
                 <a name="tables"></a>
-                <h1>Tables</h1>
-               
+                <hr>                
+                <h1>Tables</h1>               
                 <div class="container">
                         <h3>class=table</h3>
                     <table class="table">
@@ -224,7 +238,9 @@
                     
                 </container>
 
-                <h1>DIVs</h1>
+                <a name="cards"></a>
+                <hr>
+                <h1>CARD (DIVS)</h1>
                 <h3>div class=card. div contains div for header and body.</h3>
                 <div class="container">
                     <div class="card">
@@ -240,6 +256,8 @@
                             </div>
                     </div>        
                 </div>
+                <hr>
+                <a name="alerts"></a>
                 <h1>ALERTS</h1>
                 <div class="alert alert-success" role="alert">alert alert-success</div>
                 <div class="alert alert-info" role="alert">alert alert-info</div>
@@ -251,6 +269,9 @@
                     <p>This requires some javascript that has not yet been implemented.</p>
                     <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
                 </div>
+
+
+
 
         </body>
     </html>
