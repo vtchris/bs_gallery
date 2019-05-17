@@ -1,3 +1,6 @@
+Visit the site at:
+https://vtchris.github.io/bs_gallery/
+
 # bs_gallery
 Bootstrap Gallery
 
